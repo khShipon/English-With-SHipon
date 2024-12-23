@@ -1,0 +1,42 @@
+:root {
+  --primary: #4F46E5;
+  --primary-dark: #4338CA;
+  --primary-light: #818CF8;
+  --secondary: #EC4899;
+  --secondary-dark: #DB2777;
+  --secondary-light: #F472B6;
+  --accent: #10B981;
+  --accent-dark: #059669;
+  --accent-light: #34D399;
+  --background: #F9FAFB;
+  --foreground: #1F2937;
+  --card: #FFFFFF;
+  --card-hover: #F3F4F6;
+  --border: #E5E7EB;
+  --muted: #9CA3AF;
+}
+
+.theme-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-shadow-hover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
