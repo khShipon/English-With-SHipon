@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
+  base: '/English-With-SHipon/', // Replace with your repository name
   plugins: [react()],
   root: './', // Ensure index.html is in the root directory
   resolve: {
